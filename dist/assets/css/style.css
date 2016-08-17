@@ -3,7 +3,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -11,6 +13,7 @@ html {
 html, body {
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -53,6 +56,34 @@ html, body {
 }
 
 .main-menu.slide-from-right.menu-open {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.main-menu.slide-from-bottom {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+}
+
+.main-menu.slide-from-bottom.menu-open {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.main-menu.slide-from-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+}
+
+.main-menu.slide-from-top.menu-open {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }

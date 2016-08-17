@@ -16,13 +16,13 @@
         <div class="menu-triggers">
           <button class="btn btn-default" id="slideFromLeft">From Left</button>
           <button class="btn btn-default" id="slideFromRight">From Right</button>
-          <button class="btn btn-default">From Top</button>
-          <button class="btn btn-default">From Bottom</button>
+          <button class="btn btn-default" id="slideFromTop">From Top</button>
+          <button class="btn btn-default" id="slideFromBottom">From Bottom</button>
         </div>
         <nav class="main-menu slide-from-left" id="slideLeft" role="navigation">
           <div class="menu-title">
             <h2>Slide From Left</h2>
-            <div class="close-menu">Close</div>
+            <div class="close-menu" onclick="closeMenu()">Close</div>
           </div>
           <ul class="menu">
             <li><a href="#">Link</a></li>
@@ -35,7 +35,33 @@
         <nav class="main-menu slide-from-right" id="slideRight" role="navigation">
           <div class="menu-title">
             <h2>Slide From Right</h2>
-            <div class="close-menu">Close</div>
+            <div class="close-menu" onclick="closeMenu();">Close</div>
+          </div>
+          <ul class="menu">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </nav>
+        <nav class="main-menu slide-from-top" id="slideTop" role="navigation">
+          <div class="menu-title">
+            <h2>Slide From Top</h2>
+            <div class="close-menu" onclick="closeMenu()">Close</div>
+          </div>
+          <ul class="menu">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </nav>
+        <nav class="main-menu slide-from-bottom" id="slideBottom" role="navigation">
+          <div class="menu-title">
+            <h2>Slide From Bottom</h2>
+            <div class="close-menu" onclick="closeMenu()">Close</div>
           </div>
           <ul class="menu">
             <li><a href="#">Link</a></li>
