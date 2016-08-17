@@ -1,26 +1,6 @@
-$menu-width: 280px;
-html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
+@import 'settings/settings';
 
-html, body {
-  height: 100%;
-  overflow-x: hidden;
-  position: relative;
-}
 
-body {
-  
-}
-
-.page-header {
-  h1 {
-    font-size: 2em;
-    line-height: 0.75em;
-    small {
-      color: #333;
-    }
-  }
-}
 .main-menu {
   background: #333;
   position: absolute;
@@ -41,6 +21,26 @@ body {
     top: 0;
     right: 0;
     transform: translate3d($menu-width, 0, 0);
+    &.menu-open {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  &.slide-from-bottom {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    width: 100%;
+    transform: translate3d(0, 100%, 0);
+    &.menu-open {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  &.slide-from-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translate3d(0, -100%, 0);
     &.menu-open {
       transform: translate3d(0, 0, 0);
     }
