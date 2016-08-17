@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+body {
+
+}
+
+.page-header {
+  h1 {
+    font-size: 2em;
+    line-height: 0.75em;
+    small {
+      color: #333;
+    }
+  }
+}
